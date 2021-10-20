@@ -34,3 +34,23 @@
     border-bottom: 3px solid #34c759;
     border-radius: 0px;
 }
+
+.display {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 740px;
+  }
+}
+
+.x-button {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}

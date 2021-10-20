@@ -1,0 +1,14 @@
+<nav>
+  <ul class="pagination">
+    <li class="page-item" (click)="onClickPage(1)"><a class="page-link" href="javascript:void(0);">
+      &laquo;&laquo;</a></li>
+    <li class="page-item" (click)="onClickPage(activePage - 1)"><a class="page-link" href="javascript:void(0);">
+        &laquo;</a></li>
+    <li class="page-item active"
+      (click)="onClickPage(activePage)"><a class="page-link" href="javascript:void(0);">{{activePage}}</a></li>
+    <li class="page-item" (click)="onClickPage(activePage + 1)"><a class="page-link" href="javascript:void(0);">
+      &raquo;</a></li>
+    <li class="page-item" (click)="onClickPage(getPageCount())"><a class="page-link" href="javascript:void(0);">
+      &raquo;&raquo;</a></li>
+  </ul>
+</nav>

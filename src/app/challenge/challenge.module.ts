@@ -5,13 +5,19 @@ import { SearchComponent } from './pages/search/search.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { PaginationComponent } from './components/pagination/pagination.component';
+import { CharacterDetailComponent } from './components/character-detail/character-detail.component';
+import { CharacterCardComponent } from './components/character-card/character-card.component';
 
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    PaginationComponent,
+    CharacterDetailComponent,
+    CharacterCardComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   exports:[
     HomeComponent,
-    SearchComponent
+    SearchComponent,
   ]
 })
 export class ChallengeModule { }
