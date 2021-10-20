@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Character, Episode, EpisodeFilter } from '../../interface/character.interface';
+import { Character, Episode, EpisodeFilter, CharacterLocation } from '../../interface/character.interface';
 import { ApiService } from '../../services/api.service';
+import { Gender } from '../../interface/gender.interface';
 
 @Component({
   selector: 'app-character-detail',
@@ -32,7 +33,16 @@ export class CharacterDetailComponent implements OnInit {
     this.getRandomCharacters();
   }
 
-  @Input("character") character!: Character;
+  @Input("character") character: Character = {
+    status: 'unknown',
+    species: '',
+    type: '',
+    gender: Gender.Unknown,
+    origin: {} as CharacterLocation,
+    location: {} as CharacterLocation,
+    image: '',
+    episode: []
+  } as unknown as Character;;
 
   getEpisodes() :Episode[] {
     let episodeIds = this.character.episode.map(url => {

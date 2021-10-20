@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Character } from '../../interface/character.interface';
+import { Character, CharacterLocation } from '../../interface/character.interface';
+import { Gender } from '../../interface/gender.interface';
 
 @Component({
   selector: 'app-character-card',
@@ -8,7 +9,16 @@ import { Character } from '../../interface/character.interface';
 })
 export class CharacterCardComponent implements OnInit {
 
-  @Input() character!: Character;
+  @Input() character: Character = {
+    status: 'unknown',
+    species: '',
+    type: '',
+    gender: Gender.Unknown,
+    origin: {} as CharacterLocation,
+    location: {} as CharacterLocation,
+    image: '',
+    episode: []
+  } as unknown as Character;
   constructor() { }
 
   ngOnInit(): void {
