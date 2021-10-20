@@ -1,0 +1,36 @@
+.content-header{
+    background-color: #081F32;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/bg-header.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.input-group.input-group-dark > .input-group-text {
+    background-color: #081F32;
+    color: #fff;
+    border-right: none;
+}
+
+.input-group.input-group-dark > .form-control {
+    background-color: #081F32;
+    color: #fff;
+    border-left: none;
+}
+
+.input-group.input-group-dark > .form-control::placeholder {
+    color: #fff;
+}
+
+
+.content-footer{
+    background-color: #081F32;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/bg-footer.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.active-gender{
+    border-bottom: 3px solid #34c759;
+    border-radius: 0px;
+}
