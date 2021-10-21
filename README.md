@@ -1,6 +1,12 @@
 # Squadmakers
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
+Project scope is about search any character from Rick and Marty series.
+Main features are:
+- Search by character name
+- Filter by character gender
+- Pagination on results
+- See Character detail
 
 ## Development server
 
@@ -13,6 +19,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Build for Production
+
+Run `ng build --prod --aot --base-href` to build the project. The build artifacts will be stored in the `dist/` directory.
+If you don't have install angular cli, you can run `npm run prod`
 
 ## Running unit tests
 
